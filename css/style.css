@@ -1,0 +1,841 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+/* ********** بداية الاكواد الثابته معايا ********** */
+:root{
+    --green:#4BC6A7 ;
+    --gry: #484B52
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+/* ********** نهاية الاكواد الثابته ********** */
+/* ********** start nav ********** */
+nav {
+    background-color: var(--gry);
+    color: #fff;
+    height: 60px;
+    display: flex;
+    position: relative;
+}
+nav div {
+    position: absolute;
+    top: 15px;
+    left: 128px;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav div span{
+    color: var(--green);
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+nav > :nth-child(2) {
+    position: absolute;
+    top: 3px;
+    left: 200px;
+}
+nav > :nth-child(2) select {
+    background-color:var(--gry);
+    border: none;
+    width: 19px;
+    color: #fff;
+    cursor: pointer;
+}
+nav > :nth-child(3) {
+    position: absolute;
+    top: 2px;
+    right: 128px;
+}
+nav ul li {
+    margin-left: 30px;
+}
+/* ********** end nav ********** */
+header {
+    width: 100%;
+    height: calc(100vh - 60px);
+    background: url(../images/background_header.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.overlay_header {
+    height: 100%;
+    background-color:#000000ad;
+}
+header h1 {
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    color: var(--green);
+    font-size: 50px;
+}
+header h2 {
+    position: absolute;
+    top: 23%;
+    left: 43%;
+    color: #fff;
+    font-size: 40px;
+}
+header > :nth-child(4){
+    top: 48%;
+    left: 41%;
+}
+/* ********** start section we are */
+.we_are {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.we_are h2 {
+    position: absolute;
+    top: 35px;
+    left: 42%;
+    font-size: 2em;
+}
+.div_paragraph {
+    position: absolute;
+    top: 110px;
+    left: 13%;
+    font-size: 19px;
+    text-align: center;
+    line-height: 2;
+    width: 75%;
+}
+.div_paragraph >:nth-child(1){
+    width: 100%;
+}
+.div_paragraph >:nth-child(2){
+    width: 97%;
+}
+.card {
+    width: 90%;
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 49%;
+
+}
+.card div {
+    width: 16%;
+    height: 260px;
+    background-color:#eee;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.card div i {
+    position: absolute;
+    top: 30px;
+    color: var(--green);
+    font-size: 60px;
+}
+.card div h4 {
+    position: absolute;
+    top: 90px;
+    width: 130px;
+}
+.card div label {
+    position: absolute;
+    top: 155px;
+    width: 190px;
+    font-size: 17px;
+}
+.we_are  input {
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    height: 45px;
+    width: 150px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor:pointer;
+}
+/* ********** start Our Latest ********** */
+.our_latest {
+    position: relative;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.our_latest h2 {
+    position: absolute;
+    top: 15px;
+    left: 42%;
+}
+.div_photo {
+    position: absolute;
+    top: 120px;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.div_photo div {
+    width: 27%;
+    height: 218px;
+}
+.div_photo div img {
+    width: 100%;
+    height: 100%;
+}
+.our_latest input {
+    position: absolute;
+    top: 82%;
+    left: 46%;
+    height: 45px;
+    width: 120px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    cursor:pointer;
+}
+/* ********** start Section Card ********* */
+.section_card {
+    background-color: #484B52;
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+.section_card > :first-child {
+    position: absolute;
+    top: 20px;
+    width: 85%;
+    height: 350px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.gender{
+    width: 30%;
+    height: 230px;
+    position: relative;
+}
+.gender div {
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.gender div:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 0px solid transparent;
+    border-bottom: 23px solid transparent;
+    border-right: 66px solid #fff;
+    position: absolute;
+    bottom: 107px;
+    left: 27%;
+}
+.gender img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    bottom: 68px;
+    left: 40%;
+}
+.section_card span {
+    position: absolute;
+    top: 27%;
+    font-size: 35px;
+    color: #eee;
+    cursor: pointer;
+}
+.span_1 {
+    left: 0%;
+}
+.span_2 {
+    right: 0%;
+}
+.gender h4 {
+    color: var(--green);
+    position: absolute;
+    top: 66%;
+    left: 38%;
+}
+.gender label {
+    position: absolute;
+    top: 88%;
+    left: 24%;
+    color: #fff;
+    font-size: 18px;
+}
+.section_card > :first-child input {
+    width: 80%;
+    height: 42px;
+    position: absolute;
+    bottom: 24px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+/* ********** Start Section Logo ********** */
+.section_logo {
+    height: 270px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.section_logo h2 {
+    position: absolute;
+    top: 10px;
+}
+.div_logo {
+    position: absolute;
+    top: 70px;
+    width: 85%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.div_logo div {
+    background-color:#fff;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div_logo div img {
+    width: 200px;
+}
+/* **********start footer ********** */
+footer {
+    height: 100px;
+    background-color: var(--gry);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+footer > div {
+    position: absolute;
+    top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    height: 50px;
+}
+.link a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+.copyright {
+    position: absolute;
+    top: 50px;
+    color: #fff;
+    font-size: 17px;
+}
+/* ********************** start @media query  ******************************** */
+@media(max-width: 575.98px) {
+    nav{
+        width: 120px;
+        height: 100vh;
+        z-index: 1;
+    }
+    nav div{
+        left: 10px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    nav ul li a {
+        font-size: 13px;
+    }
+    nav > :nth-child(2){
+        left: -30px;
+        top: 50px;
+    }
+    nav > :nth-child(3){
+        left: -30px;
+        top: 200px;
+    }
+    header{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: calc(100% - 120px);
+    }   
+    header h1 {
+        font-size: 26px;
+        left: 17%;
+    }
+    header h2{
+        font-size: 19px;
+        top: 27%;
+        left: 35%;
+    }
+    header > :nth-child(4){
+        top: 45%;
+        left: 31%;
+    }
+    .we_are {
+        height: 1250px;
+    }
+    .we_are h2 {
+        left: 33%;
+    }
+    .div_paragraph {
+        width: 400px;
+        text-align: center;
+        height: 370px;
+    }
+    .card {
+        top: 45%;
+        flex-wrap: wrap;
+    }
+    .card div {
+        width: 40%;
+        margin-bottom: 15px;
+        height: 280px;
+    }
+    .card div i{
+        font-size: 40px;
+    }
+    .card div label {
+        width: 150px;
+    }
+    .we_are  input {
+        top: 94%;
+        left: 36%;
+    }
+    .our_latest {
+        top: 0;
+        height: 830px;
+    }
+    .our_latest h2 {
+        left: 167px;
+        font-size: 22px;
+    }
+    .div_photo {
+        top: 10%;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .div_photo div {
+        width: 300px;
+        margin: 10px;
+        height: 200px;
+    }
+    .div_photo div img {
+        width: 100%;
+    }
+    .our_latest input {
+        top: 92%;
+        left: 38%;
+    }
+    .section_card {
+        height: 500px;
+    }
+    .gender {
+        height: 330px;
+    }
+    .gender div {
+        height: 185px;
+        width: 124px;
+    }
+    .gender div:before {
+        bottom: 126px;
+        left: 0%;
+        border-bottom: 32px solid transparent;
+    }
+    .gender img {
+        bottom: 84px;
+        left: 35%;
+    }
+    .gender h4 {
+        top: 70%;
+        left: 30%;
+    }
+    .section_card > :first-child input {
+        bottom: -68px;
+        font-size: 13px;
+    }
+    .section_card span {
+        top: 52%;
+        font-size: 30px ;
+    }
+    .span_1 {
+        left: -3%;
+    }
+    .span_2 {
+        right: -3%;
+    }
+    .section_logo {
+        height: 200px;
+    }
+    .section_logo h2{
+        top: 18px;
+        font-size: 20px;
+    }
+    .div_logo {
+        height: 120px;
+    }
+    .div_logo div {
+        height: 100%;
+    }
+    .div_logo div img {
+        width: 100px;
+    }
+    footer{
+        height: 90px;
+    }
+    footer > div {
+        height: 30px;
+        top: 10px;
+    }
+    .link a {
+        font-size: 15px;
+    }
+    .copyright {
+        font-size: 13px;
+        width: 48%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    nav div{
+        left: 35px;
+    }
+    nav > :nth-child(2) {
+        left: 70px;
+    }
+    nav > :nth-child(3){
+        right: 50px;
+    }
+    nav ul li {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    header h1 {
+        font-size: 40px;
+        left: 185px;
+    }
+    header h2{
+        font-size: 30px;
+        top: 27%;
+        left: 40%;
+    }
+    header > :nth-child(4){
+        top: 47%;
+        left: 37%;
+    }
+    .we_are {
+        height: 850px;
+    }
+    .we_are h2 {
+        left: 36%;
+    }
+    .card{
+        top: 53%
+    }
+    .card div {
+        width: 22%;
+        height: 290px;
+    }
+    .card div i {
+        font-size: 35px;
+    }
+    .card div h4 {
+        top: 22%;
+        font-size: 14px;
+    }
+    .card div label {
+        width: 120px;
+        top: 44%;
+    }
+    .we_are  input {
+        top: 91%;
+        left: 41%;
+    }
+    .our_latest {
+        height: 400px;
+    }
+    .our_latest h2 {
+        top: 20px;
+        left: 38%;
+        font-size: 22px;
+    }
+    .div_photo {
+        top: 25%;
+    }
+    .div_photo div {
+        width: 180px;
+        height: 190px;
+    }
+    .div_photo div img {
+        width: 100%;
+        height: 100%;
+    }
+    .our_latest input {
+        top: 80%;
+        left: 41%;
+    }
+    .section_card {
+        height: 450px;
+    }
+    .section_card > :first-child  {
+        height: 400px;
+    }
+    .gender {
+        height: 280px;
+        top: 30px;
+        width: 28%;
+    }
+    .gender div {
+        height: 140px;
+    }
+    .gender div:before {
+        bottom: 121px;
+        left: 10%;
+    }
+    .gender img {
+        bottom: 80px;
+        left: 36%;
+    }
+    .gender h4 {
+        top: 68%;
+        left: 34%;
+    }
+    .gender label {
+        font-size: 16px;
+        width: 162px;
+        left: 3%;
+    }
+    .section_card span {
+        top: 42%;
+    }
+    .section_card > :first-child input {
+        bottom: 20px;
+        width: 75%;
+    }
+    .section_logo {
+        height: 200px;
+    }
+    .section_logo h2  {
+        font-size: 23px;
+    }
+    .div_logo {
+        
+        height: 115px;
+    }
+    .div_logo div {
+        height: 140px;
+    }
+    .div_logo div img  {
+        width: 150px;
+    }
+    footer > div {
+        height: 40px;
+    }
+    .link a {
+        font-size: 18px;
+    }
+    .copyright {
+        width: 300px;
+        font-size: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    nav div{
+        left: 50px;
+    }
+    nav > :nth-child(2) {
+        left: 90px;
+    }
+    nav > :nth-child(3){
+        right: 70px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    header h1 {
+        font-size: 40px;
+        left: 280px;
+    }
+    header h2{
+        font-size: 35px;
+        top: 26%;
+        left: 40%;
+    }
+    header > :nth-child(4){
+        top: 46%;
+        left: 38%;
+    }
+    .we_are {
+        height: 780px;
+    }
+    .we_are h2 {
+        left: 38%;
+    }
+    .card{
+        top: 53%
+    }
+    .card div {
+        width: 21%;
+    }
+    .card div i {
+        font-size: 40px;
+    }
+    .card div h4 {
+        top: 27%;
+    }
+    .card div label {
+        width: 160px;
+        top: 53%;
+        font-size: 15px;
+    }
+    .we_are  input {
+        top: 92%;
+        left: 42%;
+    }
+    .our_latest {
+        top: 2%;
+        height: 440px;
+    }
+    .our_latest h2 {
+        top: 25px;
+        left: 39%;
+        font-size: 24px;
+    }
+    .our_latest input {
+        top: 83%;
+        left: 44%;
+    }
+    .gender {
+        height: 245px;
+    }
+    .gender div {
+        height: 118px;
+    }
+    .gender div:before {
+        left: 20%;
+    }
+    .gender img {
+        left: 40%;
+    }
+    .gender h4 {
+        left: 38%;
+    }
+    .gender label  {
+        left: 12%;
+        font-size: 17px;
+    }
+    .section_card span {
+        top: 32%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    nav div{
+        left: 60px;
+    }
+    nav > :nth-child(2) {
+        left: 100px;
+    }
+    nav > :nth-child(3){
+        right: 70px;
+    }
+    .we_are {
+        height: 740px;
+    }
+    .card{
+        top: 55%
+    }
+    .card div {
+        width: 20%;
+    }
+    .card div i {
+        font-size: 45px;
+    }
+    .card div label {
+        width: 160px;   
+        top: 60%;
+    }
+    .we_are  input {
+        top: 94%;
+        left: 42%;
+    }
+    .our_latest {
+        height: 450px;
+    }
+    .our_latest h2 {
+        left: 40%;
+        font-size: 27px;
+    }
+    .div_photo {
+        top: 24%;
+    }
+    .div_photo div {
+        width: 260px;
+    }
+    .div_photo div img {
+        width: 100%;
+    }
+    .our_latest input {
+        top: 80%;
+        left: 44%;
+    }
+}@media (min-width: 1200px) {
+    .card {
+        top: 53%;
+    }
+    .card div {
+        width: 19%;
+    }
+    .we_are  input {
+        top: 94%;
+        left: 44%;
+    }
+    .our_latest {
+        height: 430px;
+    }
+    .div_photo {
+        top: 25%;
+    }
+} 
+/* *************************************************** */

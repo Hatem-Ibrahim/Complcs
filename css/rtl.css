@@ -1,0 +1,53 @@
+body{
+    direction: rtl;
+}
+nav div {
+    right: 125px;
+}
+nav > :nth-child(2) {
+    right: 200px;
+}
+nav > :nth-child(3) {
+    right: 69%;
+}
+nav ul li {
+    margin-right: 30px;
+}
+/* ********** start header ********** */
+header h1 {
+    right: 37%;
+}
+header h2 {
+    right: 46%;
+}
+/* ********** start section we are */
+.we_are h2 {
+    right: 47%;
+}
+/* ******************************************** */
+@media(max-width: 575.98px) {
+    nav div{
+        right: 10px;
+    }
+    nav ul li{
+        margin-right: 0;
+    }
+    nav > :nth-child(2){
+        right: -30px;
+    }
+    nav > :nth-child(3){
+        right: -30px;
+    }
+    header{
+        width: calc(100%);
+    }    
+    header h1 {
+        right: 40%;
+    }
+    header h2{
+        right: 52%;
+    }
+    .we_are h2 {
+        right: 41%;
+    }
+}
